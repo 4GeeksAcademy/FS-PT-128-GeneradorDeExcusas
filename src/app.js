@@ -7,5 +7,21 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  console.log("GENERADOR DE EXCUSAS:");
+
+  let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
+  let action = ['ate', 'peed', 'crushed', 'broke'];
+  let what = ['my homework', 'my phone', 'the car'];
+  let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
+
+  function excuseGen() {
+    return `${who[Math.floor(Math.random() * who.length)]} ${action[Math.floor(Math.random() * action.length)]} ${what[Math.floor(Math.random() * what.length)]} ${when[Math.floor(Math.random() * when.length)]}`;
+  };
+
+  //console.log(excuseGen())
+
+  const mensjae = document.querySelector('#excuse').innerHTML = excuseGen();
+
+  //mensjae.textContent = excuseGen();
 };
+

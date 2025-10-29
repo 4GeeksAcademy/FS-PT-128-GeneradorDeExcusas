@@ -3,3 +3,10 @@
 body{
     background: white;
 }
+
+#excuse {
+    display: flex;
+    color: rgba(164, 79, 204, 0.692);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
